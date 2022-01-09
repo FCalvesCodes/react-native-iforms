@@ -1,6 +1,6 @@
 {
   "name": "react-native-iforms",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Formulários",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -143,5 +143,10 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@hookform/resolvers": "2.8.5",
+    "react-hook-form": "7.22.5",
+    "yup": "0.32.11"
   }
 }
