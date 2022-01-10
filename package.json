@@ -1,6 +1,6 @@
 {
   "name": "react-native-iforms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Formulários",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

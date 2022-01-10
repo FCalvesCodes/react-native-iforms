@@ -8,14 +8,35 @@ Formulários
 npm install react-native-iforms
 ```
 
+or
+
+```sh
+yarn add react-native-iforms
+```
+
 ## Usage
 
 ```js
-import { multiply } from "react-native-iforms";
+import { Form, Field } from 'react-native-iforms';
 
-// ...
+const handleSubmit = (submittingValues) => {
+  Alert.alert(JSON.stringify(submittingValues, null, 2));
+};
 
-const result = await multiply(3, 7);
+return (
+  <Form onSubmit={handleSubmit}>
+    <Field name="firstName">
+      {({ field, fieldState }) => (
+        <TextInput
+          value={field.value}
+          onChangeText={field.onChange}
+          onBlur={field.onBlur}
+        />
+      )}
+    </Field>
+    <Submit>{(onSubmit) => <Button title="Save" onPress={onSubmit} />}</Submit>
+  </Form>
+);
 ```
 
 ## Contributing
