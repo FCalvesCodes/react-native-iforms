@@ -1,6 +1,6 @@
 # react-native-iforms
 
-Formulários
+iforms é uma biblioteca para fins didáticos, ela ajuda na criação de formulários usando contextos e validações 
 
 ## Installation
 
@@ -17,7 +17,7 @@ yarn add react-native-iforms
 ## Usage
 
 ```js
-import { Form, Field } from 'react-native-iforms';
+import { Form, Field, Submit } from 'react-native-iforms';
 
 const handleSubmit = (submittingValues) => {
   Alert.alert(JSON.stringify(submittingValues, null, 2));
